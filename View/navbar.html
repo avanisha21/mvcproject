@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        .menu-bar{
+            background-color: blue;
+            text-align: center;
+        }
+        .menu-bar ul{
+            display:inline-flex;
+            list-style: none;
+            color: white;
+
+        }
+        .menu-bar ul li{
+            width:130px;
+            margin: 15px;
+            padding: 15px;
+        }
+        .menu-bar ul li a{
+            text-decoration:none;
+            color: white;
+            font-size: 18  px;
+            font-weight: 200;
+        }
+        .active, .menu-bar ul li:hover{
+            background-color: aquamarine;
+            border-radius:4px ;
+        }
+        .menu-bar.fa{
+            margin-right: 8px;
+        }
+        .sub-menu-1{
+            width:160px;
+            
+            display:none;
+        }
+        .menu-bar ul li:hover .sub-menu-1{
+            display:block;
+            position:absolute;
+            background-color: brown;
+            margin-top: 15px;
+            margin-left: -7px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul{
+            display:block;
+            margin:10px;
+            
+        }
+        button {
+          background-color: blueviolet;
+          color:white;
+          border-radius: 15px;
+          margin:15px;
+          padding:10px;
+          width:120px;
+          
+        }
+        button:hover{
+            cursor: pointer;
+            background-color:maroon ;
+            color: pink;
+        }
+
+
+        
+    </style>
+   
+</head>
+<body>
+    <div class="menu-bar">
+    <ul>
+       <li class="active"><a href="#"><i class="fa-solid fa-house-chimney"></i>Home  </a></li>
+       <li><a href="#">About Us</a>
+       <div class="sub-menu-1">
+        <ul>
+           <li><a href="#">Mission</a></li>
+           <li><a href="#">vision</a></li>
+           <li><a href="#">Team</a></li>
+           
+        </ul>
+    </div>
+    </li> 
+    
+         <li><a href="#">Services</a></li>
+       <li><a href="#">Clients</a></li>
+       <li><a href="#">Investers</a></li>
+       <li><a href="#">Contact</a></li>
+       <button>Login</button>
+    </ul>
+
+</div>
+</body>
+</html>
